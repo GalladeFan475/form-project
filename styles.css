@@ -89,12 +89,14 @@ body {
   color: var(--text-color);
   background-color: var(--hf-background-color);
   border-color: var(--text-color);
+  transition: color 1s, background-color 1s, border-color 1s;
 }
 
 .dark-button {
   color: var(--hf-background-color);
   background-color: var(--text-color);
   border-color: var(--hf-background-color);
+  transition: color 1s, background-color 1s, border-color 1s;
 }
 
 .header {
@@ -103,6 +105,7 @@ body {
   flex-direction: column;
   justify-content: end;
   background-color: var(--hf-background-color);
+  transition: background-color 1s;
 }
 
 .header > * {
@@ -111,11 +114,15 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  transition: color 1s;
 }
 
 .forms {
   flex: 1.15;
   box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+  background-color: var(--form-background-color);
+  transition: background-color 1s;
 }
 
 .form-text {
@@ -123,11 +130,14 @@ body {
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
+  color: var(--form-color);
+  transition: color 1s;
 }
 
 .footer {
   flex: 1.4;
   background-color: var(--hf-background-color);
+  transition: background-color 1s;
 }
 
 form {
@@ -160,6 +170,7 @@ label {
   font-size: 0.75rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
+  transition: color 1s;
 }
 
 .footer > * {
@@ -189,11 +200,14 @@ button:hover {
 
 .footer-details p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  transition: color 1s;
 }
 
 .footer-details a {
   text-decoration: none;
   color: #596d48;
+  font-weight: bold;
 }
 
 input {
