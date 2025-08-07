@@ -1,8 +1,12 @@
 :root {
-  --color: white;
+  --text-color: black;
+  --form-color: rgb(108, 103, 103);
+  --hf-background-color: rgba(235, 226, 226, 0.545);
+  --form-background-color: white;
 }
 
 body {
+  bottom: 0;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -54,5 +58,107 @@ body {
 }
 
 .non-image {
+  height: 100%;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 1.45;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: var(--hf-background-color);
+}
+
+.header > * {
+  margin-left: 30px;
+  width: 58%;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.forms {
+  flex: 1.15;
+  box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.form-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.footer {
+  flex: 1.4;
+  background-color: var(--hf-background-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row-one,
+.row-two,
+.row-three {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.row-one > *,
+.row-two > *,
+.row-three > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms > * {
+  margin-left: 30px;
+}
+
+label {
+  color: var(--form-color);
+  font-size: 0.75rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.footer > * {
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.footer-details button {
+  width: 170px;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #596d48;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.footer-details p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-details a {
+  text-decoration: none;
+  color: #596d48;
 }
