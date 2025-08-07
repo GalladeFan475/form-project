@@ -44,13 +44,18 @@
             </div>
             <div class="row-two-form-two">
               <label for="num">PHONE NUMBER</label>
-              <input type="number" name="num" id="num" />
+              <input
+                type="text"
+                name="num"
+                id="num"
+                pattern="01[0-9]-?\d{7,8}"
+              />
             </div>
           </div>
           <div class="row-three">
             <div class="row-three-form-one">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required />
             </div>
             <div class="row-three-form-two">
               <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -58,6 +63,7 @@
                 type="password"
                 name="confirm-password"
                 id="confirm-password"
+                required
               />
             </div>
           </div>
