@@ -62,6 +62,39 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  top: 25px;
+  right: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.buttons > button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.light-button {
+  color: var(--text-color);
+  background-color: var(--hf-background-color);
+  border-color: var(--text-color);
+}
+
+.dark-button {
+  color: var(--hf-background-color);
+  background-color: var(--text-color);
+  border-color: var(--hf-background-color);
 }
 
 .header {
