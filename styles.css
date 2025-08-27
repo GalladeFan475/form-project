@@ -1,8 +1,8 @@
 :root {
   --text-color: black;
-  --form-color: rgb(108, 103, 103);
-  --hf-background-color: rgba(235, 226, 226, 0.545);
-  --form-background-color: white;
+  --form-color: #5f6670;
+  --hf-background-color: #f9fafb;
+  --form-background-color: #ffffff;
 }
 
 body {
